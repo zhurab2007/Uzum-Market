@@ -53,7 +53,7 @@ public class Card implements Externalizable {
         this.id = UUID.fromString((String) in.readObject());
         this.card_number = (String) in.readObject();
         this.balance = in.readInt();
-        this.userId = String.valueOf(UUID.fromString((String) in.readObject())); // ✅ userId fayldan o‘qiladi!
+        this.userId = String.valueOf(UUID.fromString((String) in.readObject()));
     }
 
 }

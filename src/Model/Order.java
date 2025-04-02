@@ -30,6 +30,10 @@ public class Order implements Externalizable {
         this.createdTime = createdTime;
         this.userGetTime = userGetTime;
     }
+
+    public Order() {
+    }
+
     public int getTotalPrice() { return totalPrice; }
     public OrderStatus getOrderStatus() { return orderStatus; }
     @Override
